@@ -1,0 +1,11 @@
+version: '2'
+services:
+  cartechnicaldocumentation-postgresql:
+    image: postgres:11.6
+    # volumes:
+    #     - ~/volumes/jhipster/CarTechnicalDocumentation/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=CarTechnicalDocumentation
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
