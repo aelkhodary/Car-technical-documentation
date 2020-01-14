@@ -38,8 +38,8 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:postgresql://localhost:5432/CarTechnicalDocumentation
-    username: CarTechnicalDocumentation
-    password:
+    username: car
+    password: car
     hikari:
       poolName: Hikari
       auto-commit: false

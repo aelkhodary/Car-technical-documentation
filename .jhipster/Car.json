@@ -1,0 +1,38 @@
+{
+    "name": "Car",
+    "fields": [
+        {
+            "fieldName": "model",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "document",
+            "otherEntityRelationshipName": "car",
+            "relationshipName": "document"
+        },
+        {
+            "relationshipName": "carOwnwer",
+            "otherEntityName": "carOwnwer",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "car"
+        }
+    ],
+    "changelogDate": "20200114160442",
+    "entityTableName": "car",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": false,
+    "databaseType": "sql"
+}
